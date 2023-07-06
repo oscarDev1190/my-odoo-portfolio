@@ -4,7 +4,7 @@
     'summary': """ Apply discounts according to product brand """,
     'description': """""",
     'author': "Oscar Llovera",
-    'website': "https://www.yourcompany.com",
+    'website': "https://github.com/oscarDev1190/my-odoo-portfolio/tree/V16",
     'category': 'Product',
     'version': '16.0.1.0.0',
     'depends': [
