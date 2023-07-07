@@ -54,4 +54,6 @@ class ProductPricelistItem(models.Model):
             applied_on = values['applied_on']
             if applied_on == '4_product_brand':
                 values.update(dict(product_id=None, product_tmpl_id=None, categ_id=None))
+            else:
+                values['product_brand_id'] = False
         return super().write(values)
