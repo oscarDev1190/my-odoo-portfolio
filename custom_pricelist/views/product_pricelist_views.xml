@@ -1,0 +1,67 @@
+<odoo>
+  <data>
+
+    <record id="product_pricelist_view" model="ir.ui.view">
+      <field name="name">product.pricelist.view.form.inherit.custom</field>
+      <field name="model">product.pricelist</field>
+      <field name="inherit_id" ref="product.product_pricelist_view"/>
+      <field name="arch" type="xml">
+        <xpath expr="//div[hasclass('oe_title')]" position="before">
+          <div class="oe_button_box" name="button_box">
+            <button name="action_view_rules_from_pricelist" type="object" class="oe_stat_button" icon="fa-globe icon">
+              <div class="o_field_widget o_stat_info">
+                <span class="o_stat_text">View rules</span>
+              </div>
+            </button>
+          </div>          
+        </xpath>
+
+        <xpath expr="//field[@name='item_ids']/tree[1]//field[@name='product_tmpl_id']" position="after">
+          <field name="code" />
+        </xpath>
+        <xpath expr="//field[@name='item_ids']/tree[2]//field[@name='name']" position="after">
+          <field name="code" />
+        </xpath>
+      </field>
+    </record>
+
+    <record id="product_pricelist_item_form_view" model="ir.ui.view">
+      <field name="name">product.pricelist.item.view.form.inherit.custom</field>
+      <field name="model">product.pricelist.item</field>
+      <field name="inherit_id" ref="product.product_pricelist_item_form_view"/>
+      <field name="arch" type="xml">
+        <group name="pricelist_rule_related" position="after">
+          <group name="other_info">
+            <field name="code" />
+          </group>
+        </group>
+      </field>
+    </record>
+
+    <record id="product_pricelist_item_tree_view" model="ir.ui.view">
+      <field name="name">product.pricelist.item.view.form.inherit.custom</field>
+      <field name="model">product.pricelist.item</field>
+      <field name="inherit_id" ref="product.product_pricelist_item_tree_view"/>
+      <field name="arch" type="xml">
+        <field name="name" position="after">
+          <field name="code" />
+        </field>
+        <xpath expr="/tree" position="attributes">
+          <attribute name="default_order" >pricelist_id</attribute>
+        </xpath>
+      </field>
+    </record>
+
+    <record id="product_pricelist_item_tree_view_from_product" model="ir.ui.view">
+      <field name="name">product.pricelist.item.from.product.view.form.inherit.custom</field>
+      <field name="model">product.pricelist.item</field>
+      <field name="inherit_id" ref="product.product_pricelist_item_tree_view_from_product"/>
+      <field name="arch" type="xml">
+        <field name="name" position="after">
+          <field name="code" />
+        </field>
+      </field>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,46 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom_pricelist
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-08 16:37+0000\n"
+"PO-Revision-Date: 2023-07-08 16:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom_pricelist
+#: model_terms:ir.ui.view,arch_db:custom_pricelist.product_pricelist_view
+msgid "<span class=\"o_stat_text\">View rules</span>"
+msgstr "<span class=\"o_stat_text\">Ver reglas</span>"
+
+#. module: custom_pricelist
+#: model:ir.model.fields,field_description:custom_pricelist.field_product_pricelist_item__code
+msgid "Code"
+msgstr "Código"
+
+#. module: custom_pricelist
+#: model:ir.model.fields,help:custom_pricelist.field_product_pricelist_item__code
+msgid "Code used to identify the rule."
+msgstr "Código usado para identificar la regla."
+
+#. module: custom_pricelist
+#: model:ir.model,name:custom_pricelist.model_product_pricelist
+msgid "Pricelist"
+msgstr "Tarifa"
+
+#. module: custom_pricelist
+#: model:ir.model,name:custom_pricelist.model_product_pricelist_item
+msgid "Pricelist Rule"
+msgstr "Regla de Tarifa"
+
+#. module: custom_pricelist
+#: model:ir.actions.server,name:custom_pricelist.pricelist_item_list_view_action_server
+msgid "See list of rules"
+msgstr "Ver listado de reglas"
